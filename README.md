@@ -9,16 +9,23 @@ This is a simple Flask app that interacts with a MySQL database. The app allows 
 
 ## Setup  - For Ubuntu, install docker
 sudo apt install
+
 sudo apt update
+
 sudo apt install docker.io
+
 sudo chown $USER /var/run/docker.sock
+
 docker ps
 
 
 ## Download app from github
 git clone https://github.com/vaibhav.b1406/two-tier-flask-app.git
+
 cd two-tier-flask-app
+
 docker build . -t flaskapp
+
 docker images
 
 ## Create docker volume
